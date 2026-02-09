@@ -79,12 +79,6 @@ O modelo SVM com kernel linear apresentou os seguintes resultados:
    ```
    Abra o notebook desejado na pasta `notebooks/`.
 
-## 📊 Resultados
-(Adicione aqui os principais resultados obtidos, métricas de desempenho e visualizações relevantes)
-
-## 📚 Conclusões
-(Descreva as principais conclusões sobre a comparação entre os kernels SVM)
-
 ## 📝 Licença
 Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICENSE) para detalhes.
 
