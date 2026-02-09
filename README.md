@@ -17,16 +17,43 @@ O objetivo deste projeto é comparar o desempenho de diferentes kernels do algor
 ## 📋 Estrutura do Projeto
 ```
 svm-kernel-poly-vs-linear/
-├── data/                    # Dados brutos e processados
-├── notebooks/               # Jupyter notebooks com análise
-├── src/                     # Código-fonte Python
-│   ├── __init__.py
-│   ├── data_preprocessing.py
-│   ├── model.py
-│   └── utils.py
+├── CARRO_CLIENTES.csv       # Conjunto de dados original
+├── MOD40_EXERCICIO.ipynb    # Notebook com a análise e modelo
 ├── README.md                # Este arquivo
 └── requirements.txt         # Dependências do projeto
 ```
+
+## 📊 Resultados
+O modelo SVM com kernel linear apresentou os seguintes resultados:
+
+- **Acurácia**: 81.33%
+- **Precisão**:
+  - Classe 0 (Não comprou): 81%
+  - Classe 1 (Comprou): 82%
+- **Recall**:
+  - Classe 0: 88%
+  - Classe 1: 72%
+- **F1-Score**:
+  - Classe 0: 84%
+  - Classe 1: 77%
+
+### Matriz de Confusão
+```
+[[152  20]
+ [ 36  92]]
+```
+
+## 🎯 Conclusões
+
+1. O modelo SVM com kernel linear demonstrou bom desempenho na classificação de clientes quanto à propensão de compra de carros, com uma acurácia geral de 81.33%.
+
+2. A análise da matriz de confusão mostra que o modelo é ligeiramente melhor em identificar corretamente os clientes que não compraram (classe 0) em comparação com os que compraram (classe 1).
+
+3. A precisão equilibrada entre as duas classes (81% e 82%) indica que o modelo não apresenta viés significativo para nenhuma das classes.
+
+4. O recall mais alto para a classe 0 (88%) em comparação com a classe 1 (72%) sugere que o modelo é mais eficaz em identificar corretamente os clientes que não compraram.
+
+5. Estes resultados podem ser utilizados para direcionar campanhas de marketing mais eficazes, focando nos clientes com maior probabilidade de compra.
 
 ## 🚀 Como Executar
 1. Clone o repositório:
@@ -60,9 +87,6 @@ svm-kernel-poly-vs-linear/
 
 ## 📝 Licença
 Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICENSE) para detalhes.
-
-## 👥 Autores
-- [Seu Nome](https://github.com/seu-usuario)
 
 ## 🙏 Agradecimentos
 - EBAC - Escola Britânica de Artes Criativas e Tecnologia
